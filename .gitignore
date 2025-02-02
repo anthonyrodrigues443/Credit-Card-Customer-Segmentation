@@ -1,0 +1,5 @@
+#virtual environment
+customer_seg_proj/
+
+#pickle models
+*.pkl
