@@ -1,0 +1,72 @@
+============Cluster based Observations===========
+@
+Cluster 0:
+
+
+This is the second largest cluster with 1316 customers.
+Customers in this cluster have a relatively "higher average balance" (mean of 1937.19) and make moderate to high-value
+purchases.
+They have a mix of one-off and installment purchases.
+Cash advance usage is moderate.
+They tend to make purchases frequently.
+They have a moderate credit limit.
+Payments made are relatively high compared to the minimum payments.
+They don't fully pay their balance (PRC_FULL_PAYMENT is relatively low).
+
+Potential schemes to attract Cluster 0 customers:
+
+
+Offer cashback or rewards on frequent purchases to encourage them to spend more.
+Promote credit limit increases to boost their purchasing power.
+Introduce installment purchase plans for high-value items.
+@
+Cluster 1:
+
+This cluster is the largest with 7430 customers.
+Customers in this cluster have a lower average balance (mean of 1439.13) and tend to make smaller purchases.
+One-off purchases are infrequent, and installment purchases are also relatively low.
+Cash advance usage is significant in this cluster.
+They make purchases less frequently compared to Cluster 0.
+Credit limits are moderate.
+Payments and minimum payments are relatively low.
+Most customers in this cluster don't fully pay their balances too(PRC_FULL_PAYMENT is low).
+
+Potential schemes to attract Cluster 1 customers:
+
+Offer incentives or discounts on cash advances to encourage usage.
+Provide financial management tools and guidance to help them improve their payment behavior.
+Introduce budget-friendly purchase options and promotions.
+@
+Cluster 2:
+
+This cluster is the smallest with only 22 customers.
+Customers in this cluster have a high average balance (mean of 5728.55) and make very high-value purchases.
+They have a high frequency of purchases and one-off purchases.
+Cash advance usage is low.
+They tend to make purchases frequently and have a high credit limit.
+Payments made are substantial compared to minimum payments.
+Most customers in this cluster fully pay their balances (PRC_FULL_PAYMENT is high).
+
+Potential schemes to attract Cluster 2 customers:
+
+Offer premium rewards and exclusive benefits for high-value customers.
+Provide personalized concierge services or exclusive offers.
+Focus on credit limit increases for even larger purchases.
+Offer investment or savings products to make use of their high balances.
+@
+Cluster 3:
+
+This cluster consists of 182 customers being the second smallest cluster.
+Customers in this cluster have a moderate average balance (mean of 3483.39) and make moderately high-value purchases.
+They have a mix of one-off and installment purchases.
+Cash advance usage is moderate.
+They make purchases frequently.
+Credit limits are moderate.
+Payments made are decent compared to minimum payments.
+Like Cluster 0, they don't fully pay their balances (PRC_FULL_PAYMENT is relatively low).
+
+Potential schemes to attract Cluster 3 customers:
+
+Offer rewards or discounts for frequent shoppers.
+Encourage the use of credit cards for purchases through promotions.
+Provide budgeting tools to help customers manage their payments better.
