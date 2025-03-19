@@ -2,21 +2,27 @@ import numpy as np
 import pandas as pd
 import pickle
 
-wit
+with open('preprocessing_values/preprocessing_data.pkl', 'rb') as pickle_file:
+    loaded_dicts = pickle.load(pickle_file)
 
-def col_dropper(data, cols=['CUST_ID']):
-    transformed_data = data.drop(columns=cols).copy()
+drop_cols, mean_dict, log_cols = loaded_dicts[0], loaded_dicts[1], loaded_dicts[2]
+
+def col_dropper(data, cols = drop_cols):
+    try : 
+        transformed_data = data.drop(columns=cols).copy()
+    except KeyError:
+         transformed_data = data.copy()
     return transformed_data
 
-def null_filler(data, col=['MINIMUM_PAYMENTS', 'CREDIT_LIMIT']):
+def null_filler(data, mean_dict = mean_dict):
     transformed_data = data.copy()
-    for i in col:
-        transformed_data[i].fillna(transformed_data[i].median(), inplace=True)
+    for col_mean in mean_dict.items():
+        transformed_data[col_mean[0]].fillna(col_mean[1], inplace=True)
     return transformed_data
 
 def log_transformer(data,cols = log_cols):
     transformed_data = data.copy()
-    for col in log_cols:
+    for col in log_cols :
             transformed_data[col] = np.log(1 + transformed_data[col])
     return transformed_data
 
@@ -24,5 +30,4 @@ def preprocessor(data):
     data = col_dropper(data)
     data1 = null_filler(data)
     data2 = log_transformer(data1)
-    data3 = col_dropper(data2, cols=['CASH_ADVANCE_FREQUENCY', 'INSTALLMENTS_PURCHASES', 'PURCHASES_FREQUENCY'])
-    return data3
+    return data2
