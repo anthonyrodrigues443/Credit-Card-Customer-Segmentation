@@ -6,6 +6,13 @@
 ## Overview 🔎
 This project is a machine learning-based web application for segmenting credit card customers. It employs a robust data preprocessing pipeline and advanced clustering techniques to group customers based on their spending behavior and financial patterns. The application is built using Python, Streamlit for the web interface, and scikit-learn’s K-Means algorithm for customer segmentation.
 
+## Aim 🎯
+- Effectively segment credit card customers into distinct groups based on their spending behavior and financial patterns.
+- Perform Exploratory Data Analysis (EDA) after clustering to uncover key characteristics of each customer segment.
+- Identify potential personalized financial schemes tailored to the needs of each cluster.
+- Provide valuable insights to financial institutions for customer retention, targeted marketing, and credit risk management.
+- Develop a scalable, interpretable, and robust customer segmentation system.
+
 <pre>
 1)Importing libraries - I've Imported all the libraries including libraries for preprocessing, visualization, 
 statistical libraries, clustering models, cluster evaluation metrics, classification models, evaluation metrics, pipeline libraries.
