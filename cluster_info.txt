@@ -1,72 +1,108 @@
-============Cluster based Observations===========
 @
-Cluster 0:
+Cluster 0
+1. Key Characteristics:  
+2. Highest mean cash advance amount (6.85) and transactions (1.67) 
+3. Very low purchase activity (mean 0.19) 
+4. Almost no installment purchases (0.07) 
+5. Very low purchase frequency (0.004) 
+6. Maintains moderate to high balance (7.09) 
+7. Lowest percentage of full payments (4.5%) 
 
+Customer Profile:  
+These customers primarily use their credit cards for cash advances rather than purchases. They tend to carry balances and rarely make full payments.
 
-This is the second largest cluster with 1316 customers.
-Customers in this cluster have a relatively "higher average balance" (mean of 1937.19) and make moderate to high-value
-purchases.
-They have a mix of one-off and installment purchases.
-Cash advance usage is moderate.
-They tend to make purchases frequently.
-They have a moderate credit limit.
-Payments made are relatively high compared to the minimum payments.
-They don't fully pay their balance (PRC_FULL_PAYMENT is relatively low).
+Targeted Schemes:  
+1. Lower cash advance fees or interest rates 
+2. Balance transfer promotions with low initial rates 
+3. Debt consolidation options 
+4. Financial literacy programs to help manage credit 
+5. Graduated payment plans to encourage debt reduction
 
-Potential schemes to attract Cluster 0 customers:
+@  
+Cluster 1 -
+Key Characteristics:  
+1. Highest purchase activity (7.44) with good balance between one-off (6.63) and installment purchases (6.36) 
+2. Highest purchase frequency (0.48 for one-off, 0.67 for installments) 
+3. Highest purchase transactions (3.31) 
+4. Highest credit limit (8.42) 
+5. Highest percentage of full payments (26%) 
+6. Almost no cash advances (0.07) 
 
+Customer Profile:  
+Active, engaged customers who use their cards regularly for both one-time and installment purchases. They're more likely to pay in full and have higher credit limits.
 
-Offer cashback or rewards on frequent purchases to encourage them to spend more.
-Promote credit limit increases to boost their purchasing power.
-Introduce installment purchase plans for high-value items.
+Targeted Schemes:  
+1. Enhanced rewards programs for regular purchases 
+2. Tiered cashback based on spending volume 
+3. Exclusive access to premium shopping events/offers 
+4. Loyalty point multipliers for continued usage 
+5. Installment payment plans with preferential rates 
+ 
 @
-Cluster 1:
+Cluster 2 -     
+Key Characteristics:  
+1. Moderate purchase activity (5.95) almost exclusively for one-off purchases (5.94 vs 0.14 for installments) 
+2. Moderate one-off purchase frequency (0.35) 
+3. Very low installment purchase frequency (0.005) 
+4. Lowest average balance (5.49) 
+5. Moderate percentage of full payments (14%) 
 
-This cluster is the largest with 7430 customers.
-Customers in this cluster have a lower average balance (mean of 1439.13) and tend to make smaller purchases.
-One-off purchases are infrequent, and installment purchases are also relatively low.
-Cash advance usage is significant in this cluster.
-They make purchases less frequently compared to Cluster 0.
-Credit limits are moderate.
-Payments and minimum payments are relatively low.
-Most customers in this cluster don't fully pay their balances too(PRC_FULL_PAYMENT is low).
+Customer Profile:  
+These customers use their cards primarily for one-time purchases rather than installments. They maintain lower balances and occasionally pay in full.
 
-Potential schemes to attract Cluster 1 customers:
+Targeted Schemes:  
+1. Cashback for one-time purchases 
+2. Short-term promotions and flash deals 
+3. Instant discounts at point of sale 
+4. Special offers at popular retailers for one-time purchases 
+5. Enhanced fraud protection for online shopping 
 
-Offer incentives or discounts on cash advances to encourage usage.
-Provide financial management tools and guidance to help them improve their payment behavior.
-Introduce budget-friendly purchase options and promotions.
 @
-Cluster 2:
+Cluster 3 -     
+Key Characteristics:  
+1. Highest mean balance (7.53) 
+2. High purchase activity (6.53) with mix of one-off (5.04) and installment (4.15) 
+3. High cash advance (7.16) and cash advance transactions (1.83) 
+4. Second highest purchase transactions (2.51) 
+5. High minimum payments (6.63) 
+6. Low percentage of full payments (5.8%) 
 
-This cluster is the smallest with only 22 customers.
-Customers in this cluster have a high average balance (mean of 5728.55) and make very high-value purchases.
-They have a high frequency of purchases and one-off purchases.
-Cash advance usage is low.
-They tend to make purchases frequently and have a high credit limit.
-Payments made are substantial compared to minimum payments.
-Most customers in this cluster fully pay their balances (PRC_FULL_PAYMENT is high).
+Customer Profile:  
+These customers use their cards extensively for all available services - purchases, installments, and cash advances. They maintain high balances and rarely pay in full.
 
-Potential schemes to attract Cluster 2 customers:
-
-Offer premium rewards and exclusive benefits for high-value customers.
-Provide personalized concierge services or exclusive offers.
-Focus on credit limit increases for even larger purchases.
-Offer investment or savings products to make use of their high balances.
+Targeted Schemes:  
+1. Comprehensive rewards program covering all transaction types 
+2. Premium services package with concierge options 
+3. VIP treatment at partner establishments 
+4. Flexible payment options to manage high balances 
+5. Special offers combining purchase discounts with cash advance fee reductions 
+6. Credit limit increases with good payment history 
+  
 @
-Cluster 3:
+Cluster 4 -
+Key Characteristics:  
+1. High purchase amount (5.75) almost entirely from installments (5.74 vs 0.17 for one-off) 
+2. Highest installment purchase frequency (0.67) 
+3. Very low one-off purchase frequency (0.006) 
+4. Lowest balance (4.46) 
+5. Second highest percentage of full payments (31.6%) 
+6. Low cash advances (0.17) 
 
-This cluster consists of 182 customers being the second smallest cluster.
-Customers in this cluster have a moderate average balance (mean of 3483.39) and make moderately high-value purchases.
-They have a mix of one-off and installment purchases.
-Cash advance usage is moderate.
-They make purchases frequently.
-Credit limits are moderate.
-Payments made are decent compared to minimum payments.
-Like Cluster 0, they don't fully pay their balances (PRC_FULL_PAYMENT is relatively low).
+Customer Profile:  
+These customers primarily use their cards for installment purchases. They maintain lower balances and are more likely to make full payments.
 
-Potential schemes to attract Cluster 3 customers:
+Targeted Schemes:  
+1. 0% interest on installment plans for longer periods 
+2. Early payment discounts for installment plans 
+3. Special offers at stores with installment payment options 
+4. Extended warranties on products purchased with installments 
+5. Milestone rewards for completing installment payment cycles 
+6. Upg6rade offers for high-value installment purchases 
 
-Offer rewards or discounts for frequent shoppers.
-Encourage the use of credit cards for purchases through promotions.
-Provide budgeting tools to help customers manage their payments better.
+@
+Strategic Recommendations:
+For Cluster 0: Focus on converting cash advance users to more profitable purchase behaviors through incentives and education. 
+For Cluster 1: Retain these high-value customers through enhanced loyalty programs and exclusive benefits. 
+For Cluster 2: Encourage higher spending on one-off purchases and introduce benefits of installment options. 
+For Cluster 3: Manage credit risk while maximizing revenue from this high-activity segment through tailored offers. 
+For Cluster 4: Expand their usage into other product categories while maintaining their preference for installment purchases. 
