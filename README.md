@@ -3,6 +3,8 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.41.1-FF4B4B?logo=streamlit&logoColor=white)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5+-green.svg)](https://scikit-learn.org/)
 
+## Overview 🔎
+This project is a machine learning-based web application for segmenting credit card customers. It employs a robust data preprocessing pipeline and advanced clustering techniques to group customers based on their spending behavior and financial patterns. The application is built using Python, Streamlit for the web interface, and scikit-learn’s K-Means algorithm for customer segmentation.
 
 <pre>
 1)Importing libraries - I've Imported all the libraries including libraries for preprocessing, visualization, 
