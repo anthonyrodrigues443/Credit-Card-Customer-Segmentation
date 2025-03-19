@@ -1,9 +1,8 @@
-<pre>
-<h1>
-Project : Credit Card Customer Segmentation
-Author : Anthony Rodrigues
-</h1>
-</pre>
+# Credit Card Customer Segmentation 💳👥📊 - Unsupervised ML
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
+
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5+-red.svg)](https://scikit-learn.org/)
+
 
 <pre>
 1)Importing libraries - I've Imported all the libraries including libraries for preprocessing, visualization, 
@@ -12,7 +11,7 @@ statistical libraries, clustering models, cluster evaluation metrics, classifica
 2)Data ingestion, cleaning and preprocessing - Dropping the identifier column, dropping duplicate records, handling missing data 
 using Simple Imputer, Normalization using log, dropping constant columns, handling multicollinearity, PCA for reducing dimensionality
 
-3)EDA - Histograms to  visualize the distribution of null data columns to decide which statistical value to fill null with, to 
+3)EDA - Histograms to  visualize the distribution of null data columns to decide which statistical value to fill null with, to  
 visualize feature distribution, pairplot along with lower and upper bounds to view outliers in each plot, heatmap to view correlation 
 among features, line plots for Cumulative Explained Variance, Explained variance ratio to get the optimal number of principal
 components, line plots for wcss and silhoutte score for obtaining the clusters number, Countplots to view cluster distribution, 
@@ -41,7 +40,3 @@ in Pipeline ,trained the pipeline tested on data and saved in pickle file format
 10)Website Building - For Website I used streamlit which is easy to use, easy to deploy, and still has better UI. The website takes 
 input for each feature of the data frame and puts displays the information for confirmation and predicts the cluster and the clusters 
 characteristics and suitable schemes for the customer which was observedd through cluster analysis.
-
-
-# Credit-Card-Customer-Segmentation
-A machine learning solution for segmenting credit card customers based on spending patterns, payment behavior, and demographics to enable targeted marketing strategies and personalized services.
