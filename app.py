@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
+import pickle
 import warnings
+from preprocessor import preprocessor
 
 warnings.filterwarnings('ignore')
 st.title('Credit Card Cluster Prediction, Characteristics and Schemes to be offered')
@@ -8,22 +10,20 @@ st.title('Credit Card Cluster Prediction, Characteristics and Schemes to be offe
 @st.cache_data
 def display_df():
     info_data = pd.DataFrame()
-    info_data['Column'] = ['CUST_ID','BALANCE','BALANCE_FREQUENCY','PURCHASES',
-    'ONEOFF_PURCHASES','INSTALLMENTS_PURCHASES','CASH_ADVANCE','PURCHASES_FREQUENCY',
-    'ONEOFF_PURCHASES_FREQUENCY','PURCHASES_INSTALLMENTS_FREQUENCY','CASH_ADVANCE_FREQUENCY',
+    info_data['Column'] = ['BALANCE','BALANCE_FREQUENCY','PURCHASES',
+    'ONEOFF_PURCHASES','INSTALLMENTS_PURCHASES','CASH_ADVANCE',
+    'ONEOFF_PURCHASES_FREQUENCY','PURCHASES_INSTALLMENTS_FREQUENCY',
     'CASH_ADVANCE_TRX','PURCHASES_TRX','CREDIT_LIMIT','PAYMENTS','MINIMUM_PAYMENTS',
     'PRC_FULL_PAYMENT','TENURE']
-    info_data['Column_info'] = ['Identification of Credit Card holder ',
+    info_data['Column_info'] = [
     'Balance amount left in their account to make purchases', 
     'How frequently the Balance is updated, score between 0 and 1 (1 = frequently updated, 0 = not frequently updated)',
     'Amount of purchases made from account',
     'Maximum purchase amount spent in one transaction',
     'Amount of purchase done in installment',
     'Cash in advance given by the user',
-    'How frequently the Purchases are being made, score between 0 and 1 (1 = frequently purchased, 0 = not frequently purchased)',
     'How frequently Purchases are happening in one-go (1 = frequently purchased, 0 = not frequently purchased)',
     'How frequently purchases in installments are being done (1 = frequently done,0 = not frequently done)',
-    'How frequently the cash in advance being paid',
     'Number of Transactions made with "Cash in Advanced"',
     'Number of purchase transactions made',
     'Limit of Credit Card for user',
@@ -36,22 +36,17 @@ def display_df():
 info_df = display_df()
 st.dataframe(info_df)
 
-clustered_data = pd.read_csv('Clustered_data.csv', index_col=0)
+clustered_data = pd.read_csv('datasets/clustered_data.csv', index_col=0)
 cluster0 = clustered_data[clustered_data['KMC_clusters']==0].head(1)
 cluster1 = clustered_data[clustered_data['KMC_clusters']==1].head(1)
 cluster2 = clustered_data[clustered_data['KMC_clusters']==2].head(1)
 cluster3 = clustered_data[clustered_data['KMC_clusters']==3].head(1)
+cluster4 = clustered_data[clustered_data['KMC_clusters']==4].head(1)
 st.info('Sample data for checking if the model works accurately')
-st.info('Can input anything inplace of CUST_ID')
-clustered_data = pd.concat([cluster0,cluster1,cluster2,cluster3])
+
+clustered_data = pd.concat([cluster0,cluster1,cluster2,cluster3, cluster4  ])
 clustered_data
 cols = list(info_df['Column'].unique())
-
-CUST_ID = st.text_input(
-    label='Customer Id', 
-    key='CUST_ID', 
-    placeholder='e.g. C0000'
-    )
 
 BALANCE = st.number_input(
     label='Balance',
@@ -95,13 +90,6 @@ CASH_ADVANCE = st.number_input(
     placeholder='Cash in advance given by the user'
     )
 
-PURCHASES_FREQUENCY = st.slider(
-    label='Purchase Frequency',
-    key='PURCHASES_FREQUENCY', 
-    min_value=0.00, 
-    max_value=1.00
-    )
-
 ONEOFF_PURCHASES_FREQUENCY = st.slider(
     label='One-Off Purchase Frequency',
     key='ONEOFF_PURCHASES_FREQUENCY', 
@@ -112,13 +100,6 @@ ONEOFF_PURCHASES_FREQUENCY = st.slider(
 PURCHASES_INSTALLMENTS_FREQUENCY = st.slider(
     label='Purchase Installments Frequency',
     key='PURCHASES_INSTALLMENTS_FREQUENCY',
-    min_value=0.00,
-    max_value=1.00
-    )
-
-CASH_ADVANCE_FREQUENCY = st.slider(
-    label='Cash Advance Frequency', 
-    key='CASH_ADVANCE_FREQUENCY',
     min_value=0.00,
     max_value=1.00
     )
@@ -168,18 +149,19 @@ TENURE = st.slider(
     min_value=0,
     max_value=12
     )
-import joblib
+
 
 def load_models():
-    model_preprocessor = joblib.load('model_preprocessor.pkl')
-    model = joblib.load('pipeline_model.pkl')
-    return model_preprocessor, model
+    with open('models/PCA_model.pkl', 'rb')as pca_file:
+        pca_model = pickle.load(pca_file)
+    with open('models/KMeans_model.pkl', 'rb')as kmeans_model_:
+        clustering_model = pickle.load(kmeans_model_)
+    return pca_model, clustering_model
 
-model_preprocessor, model = load_models()
-records = [CUST_ID, BALANCE,BALANCE_FREQUENCY,PURCHASES, ONEOFF_PURCHASES,INSTALLMENTS_PURCHASES,
-CASH_ADVANCE,PURCHASES_FREQUENCY,ONEOFF_PURCHASES_FREQUENCY, PURCHASES_INSTALLMENTS_FREQUENCY,
-CASH_ADVANCE_FREQUENCY,	CASH_ADVANCE_TRX,	PURCHASES_TRX,	CREDIT_LIMIT,	PAYMENTS,
-MINIMUM_PAYMENTS,PRC_FULL_PAYMENT,	TENURE]
+pca_model, clustering_model = load_models()
+records = [ BALANCE,BALANCE_FREQUENCY,PURCHASES, ONEOFF_PURCHASES,INSTALLMENTS_PURCHASES,CASH_ADVANCE,
+           ONEOFF_PURCHASES_FREQUENCY, PURCHASES_INSTALLMENTS_FREQUENCY,CASH_ADVANCE_TRX,	
+           PURCHASES_TRX,	CREDIT_LIMIT,	PAYMENTS, MINIMUM_PAYMENTS,PRC_FULL_PAYMENT, TENURE]
 
 show_df = st.checkbox('Show Input Data Table')
 if show_df:
@@ -191,15 +173,9 @@ with open('cluster_info.txt', 'r')as f:
 clusterwise_info = info.split('@')
 
 if st.button('PREDICT'):
-    processed_data = model_preprocessor.transform(input_data)
-    prediction = model.predict(processed_data)
+    processed_df = preprocessor(input_data)
+    pca_transformed_df = pca_model.transform(processed_df)
+    prediction = clustering_model.predict(pca_transformed_df)
     st.header('The given customer belongs to "Cluster  '+str(prediction[0])+'"')
-
     current_cluster = clusterwise_info[prediction[0]+1]
-    st.header(current_cluster.split('$')[0])
-    st.header(current_cluster.split('$')[1])
-
-
-# st.cache
-# st.cache_data
-# st.cache_resource
+    st.header(current_cluster)
