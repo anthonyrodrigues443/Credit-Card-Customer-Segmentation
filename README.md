@@ -1,7 +1,7 @@
 # Credit Card Customer Segmentation 💳👥📊 - Unsupervised ML
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5+-red.svg)](https://scikit-learn.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5+-green.svg)](https://scikit-learn.org/)
 
 
 <pre>
