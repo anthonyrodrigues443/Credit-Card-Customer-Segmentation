@@ -36,11 +36,9 @@ Credit-Card-Customer-Segmentation/
 ├── webpage_images/             # Images of the web page and terminal logging
 ├── __pycache__/                # Cached Python files
 ├── .gitignore                  # Git ignore file
-├── app.py                      # Flask application entry point
-├── cluster_info.txt            # Information about clustering results
+├── app.py                      # Streamlit application entry point
+├── cluster_info.txt            # Information about clusters characteristics and schemes
 ├── cust_seg_nb.ipynb           # Jupyter Notebook for model building
-├── model_preprocessor.pkl      # Preprocessing pipeline for clustering
-├── pipeline_model.pkl          # Full pipeline model (preprocessing + clustering)
 ├── preprocessor.py             # Script for preprocessing data
 ├── README.md                   # Project documentation
 ├── requirements.txt            # Python dependencies

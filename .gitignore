@@ -1,11 +1,5 @@
 #virtual environment
 customer_seg_proj/
 
-#video demo available on linkedin (link in Readme file)
-video_demo/
-
 #Large size PCA and Kmeans models
 models/
-
-#pickle models
-*.pkl
