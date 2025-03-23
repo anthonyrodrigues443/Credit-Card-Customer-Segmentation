@@ -14,6 +14,7 @@ This project is a machine learning-based web application for segmenting credit c
 - Develop a scalable, interpretable, and robust customer segmentation system.
 
 ### Webpage
+<img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web1.png">
 
 <pre>
 1)Importing libraries - I've Imported all the libraries including libraries for preprocessing, visualization, 
