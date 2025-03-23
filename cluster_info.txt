@@ -1,108 +1,77 @@
 @
-Cluster 0
-1. Key Characteristics:  
-2. Highest mean cash advance amount (6.85) and transactions (1.67) 
-3. Very low purchase activity (mean 0.19) 
-4. Almost no installment purchases (0.07) 
-5. Very low purchase frequency (0.004) 
-6. Maintains moderate to high balance (7.09) 
-7. Lowest percentage of full payments (4.5%) 
+Cluster 0: High Balance, Low Purchase & High Cash Advance Users
+Characteristics:
+1. High average balance (~$2185), but very low purchases (mean = $2.01).
+2. Cash advance usage is high (~$1991 on average), indicating that these users rely on cash withdrawals instead of direct purchases.
+3. Very low purchase transaction frequency and high cash advance transactions (mean = 6.46).
+4. Low full payment percentage (mean = 4.5%), meaning they likely carry forward balances.
+5. Credit limit is relatively high ($4024), but they might not be utilizing it for purchases.
 
-Customer Profile:  
-These customers primarily use their credit cards for cash advances rather than purchases. They tend to carry balances and rarely make full payments.
-
-Targeted Schemes:  
-1. Lower cash advance fees or interest rates 
-2. Balance transfer promotions with low initial rates 
-3. Debt consolidation options 
-4. Financial literacy programs to help manage credit 
-5. Graduated payment plans to encourage debt reduction
-
-@  
-Cluster 1 -
-Key Characteristics:  
-1. Highest purchase activity (7.44) with good balance between one-off (6.63) and installment purchases (6.36) 
-2. Highest purchase frequency (0.48 for one-off, 0.67 for installments) 
-3. Highest purchase transactions (3.31) 
-4. Highest credit limit (8.42) 
-5. Highest percentage of full payments (26%) 
-6. Almost no cash advances (0.07) 
-
-Customer Profile:  
-Active, engaged customers who use their cards regularly for both one-time and installment purchases. They're more likely to pay in full and have higher credit limits.
-
-Targeted Schemes:  
-1. Enhanced rewards programs for regular purchases 
-2. Tiered cashback based on spending volume 
-3. Exclusive access to premium shopping events/offers 
-4. Loyalty point multipliers for continued usage 
-5. Installment payment plans with preferential rates 
- 
-@
-Cluster 2 -     
-Key Characteristics:  
-1. Moderate purchase activity (5.95) almost exclusively for one-off purchases (5.94 vs 0.14 for installments) 
-2. Moderate one-off purchase frequency (0.35) 
-3. Very low installment purchase frequency (0.005) 
-4. Lowest average balance (5.49) 
-5. Moderate percentage of full payments (14%) 
-
-Customer Profile:  
-These customers use their cards primarily for one-time purchases rather than installments. They maintain lower balances and occasionally pay in full.
-
-Targeted Schemes:  
-1. Cashback for one-time purchases 
-2. Short-term promotions and flash deals 
-3. Instant discounts at point of sale 
-4. Special offers at popular retailers for one-time purchases 
-5. Enhanced fraud protection for online shopping 
+Personalized Scheme Suggestions:
+1. Introduce low-interest installment plans to encourage more purchases instead of cash advances.
+2. Offer cashback rewards on retail purchases to shift spending behavior away from cash advances.
+3. Provide financial literacy programs on the cost implications of frequent cash withdrawals.
 
 @
-Cluster 3 -     
-Key Characteristics:  
-1. Highest mean balance (7.53) 
-2. High purchase activity (6.53) with mix of one-off (5.04) and installment (4.15) 
-3. High cash advance (7.16) and cash advance transactions (1.83) 
-4. Second highest purchase transactions (2.51) 
-5. High minimum payments (6.63) 
-6. Low percentage of full payments (5.8%) 
+Cluster 1: High Spenders with High Credit Limit
+Characteristics:
+1. High purchases ($2676 on average), both one-off ($1622) and installment-based ($1055).
+2. Minimal cash advance usage, suggesting that they prefer direct transactions over withdrawing cash.
+3. Very high credit limit ($5870 on average) and high payments ($2455), indicating strong financial capacity.
+4. High number of purchase transactions (37 per month) and a reasonable percentage of full payments (26%).
 
-Customer Profile:  
-These customers use their cards extensively for all available services - purchases, installments, and cash advances. They maintain high balances and rarely pay in full.
-
-Targeted Schemes:  
-1. Comprehensive rewards program covering all transaction types 
-2. Premium services package with concierge options 
-3. VIP treatment at partner establishments 
-4. Flexible payment options to manage high balances 
-5. Special offers combining purchase discounts with cash advance fee reductions 
-6. Credit limit increases with good payment history 
-  
-@
-Cluster 4 -
-Key Characteristics:  
-1. High purchase amount (5.75) almost entirely from installments (5.74 vs 0.17 for one-off) 
-2. Highest installment purchase frequency (0.67) 
-3. Very low one-off purchase frequency (0.006) 
-4. Lowest balance (4.46) 
-5. Second highest percentage of full payments (31.6%) 
-6. Low cash advances (0.17) 
-
-Customer Profile:  
-These customers primarily use their cards for installment purchases. They maintain lower balances and are more likely to make full payments.
-
-Targeted Schemes:  
-1. 0% interest on installment plans for longer periods 
-2. Early payment discounts for installment plans 
-3. Special offers at stores with installment payment options 
-4. Extended warranties on products purchased with installments 
-5. Milestone rewards for completing installment payment cycles 
-6. Upg6rade offers for high-value installment purchases 
+Personalized Scheme Suggestions:
+1. Premium rewards programs offering travel benefits, lounge access, and discounts.
+2. Increased credit limits or customized credit card upgrades with exclusive privileges.
+3. Interest-free installment plans for high-value purchases to retain spending loyalty.
 
 @
-Strategic Recommendations:
-For Cluster 0: Focus on converting cash advance users to more profitable purchase behaviors through incentives and education. 
-For Cluster 1: Retain these high-value customers through enhanced loyalty programs and exclusive benefits. 
-For Cluster 2: Encourage higher spending on one-off purchases and introduce benefits of installment options. 
-For Cluster 3: Manage credit risk while maximizing revenue from this high-activity segment through tailored offers. 
-For Cluster 4: Expand their usage into other product categories while maintaining their preference for installment purchases. 
+Cluster 2: One-Off Purchasers with Low Cash Advance Usage
+Characteristics:
+1. Average purchases ($849), but almost entirely one-off purchases ($848), with minimal installment purchases.
+2. Very low cash advance usage ($12 on average), indicating they avoid credit card cash withdrawals.
+3. Low purchase frequency (7.8 transactions per month) but large individual purchases.
+4. Moderate credit limit ($4265) and relatively lower payments ($1157), suggesting occasional high spenders.
+
+Personalized Scheme Suggestions:
+1. Introduce special cashback on one-off large transactions to encourage continued usage.
+2. Exclusive limited-time discounts for electronics, travel, and fashion to match spending habits.
+3. Personalized EMI options for their high-value purchases.
+
+@
+Cluster 3: Moderate Spenders with Balanced Credit Usage
+Characteristics:
+1. Moderate spending pattern ($1319 average purchases, $822 one-off, $497 installments).
+2. Cash advance usage is relatively high ($2302 on average), indicating some reliance on quick cash.
+3. Purchase transaction frequency is moderate (19.8 transactions per month).
+4. Moderate credit limit ($5439) and relatively high payments ($2654).
+
+Personalized Scheme Suggestions:
+1. Introduce higher credit limits with lower cash advance fees to encourage responsible borrowing.
+2. Provide budgeting and credit management tools to help reduce reliance on cash advances.
+3. Offer loyalty-based rewards on frequent spending categories like fuel, groceries, and online shopping.
+
+@
+Cluster 4: Low Balance, Low Spending, and Budget-Conscious Users
+Characteristics:
+1. Very low balance ($401 average) and low spending ($516 on average).
+2. Almost no one-off purchases ($2.36) but some installment purchases ($515).
+3. Minimal cash advance usage ($6.26 average).
+4. Lowest credit limit ($3089) among all clusters, indicating they are either new customers or low-income users.
+
+Personalized Scheme Suggestions:
+1. Introduce low-fee or zero-annual-fee cards to encourage spending.
+2. Offer micro-credit options for small purchases to increase credit activity.
+3. Provide cashback on essential categories like groceries and utilities to make credit card usage more attractive.
+
+@
+Final Insights:
+Cluster 0 needs to be shifted away from excessive cash advances towards direct spending.
+
+Cluster 1 is the premium customer base and should be offered exclusive benefits to retain loyalty.
+
+Cluster 2 consists of occasional big spenders who should be provided targeted cashback and installment options.
+
+Cluster 3 balances spending and cash advances, requiring better incentives to reduce reliance on cash withdrawals.
+
+Cluster 4 includes low-income or cautious users who should be given incentives to increase credit activity.
