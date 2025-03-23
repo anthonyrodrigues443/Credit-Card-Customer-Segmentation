@@ -15,6 +15,11 @@ This project is a machine learning-based web application for segmenting credit c
 
 ### Webpage
 <img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web1.png" width="400px">
+<img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web2.png" width="400px">
+<img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web3.png" width="400px">
+<img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web4.png" width="400px">
+<img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web5.png" width="400px">
+<img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web6.png" width="400px">
 
 <pre>
 1)Importing libraries - I've Imported all the libraries including libraries for preprocessing, visualization, 
