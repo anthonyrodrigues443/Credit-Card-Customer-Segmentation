@@ -45,6 +45,84 @@ Credit-Card-Customer-Segmentation/
 
 ```
 
+## Features ⭐
+
+
+## Installation 🧑‍🔧
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation.git
+   cd Credit-Card-Customer-Segmentation
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source .\venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage 👨🏻‍💻
+1. Start the Flask application:
+   ```bash
+   streamlit run app.py
+   ```
+2. Open your web browser and navigate to `http://localhost:8501`.
+3. Enter applicant details in the provided form.
+4. View the predicted cluster, characteristics of that cluster and schemes for the customer.
+
+## Data Preprocessing Pipeline ⛓️
+
+
+### Example Usage:
+```python
+#1. run the notebook file "cust_seg_nb.ipynb" to create the models
+
+with open('models/PCA_model.pkl', 'rb')as pca_file:
+    pca_model = pickle.load(pca_file)
+with open('models/KMeans_model.pkl', 'rb')as kmeans_model_:
+    clustering_model = pickle.load(kmeans_model_)
+
+records = [ BALANCE,BALANCE_FREQUENCY,PURCHASES, ONEOFF_PURCHASES,INSTALLMENTS_PURCHASES,CASH_ADVANCE,
+           ONEOFF_PURCHASES_FREQUENCY, PURCHASES_INSTALLMENTS_FREQUENCY,CASH_ADVANCE_TRX,	
+           PURCHASES_TRX,	CREDIT_LIMIT,	PAYMENTS, MINIMUM_PAYMENTS,PRC_FULL_PAYMENT, TENURE]
+
+input_data = pd.DataFrame([records], columns=cols)
+
+processed_df = preprocessor(input_data)
+pca_transformed_df = pca_model.transform(processed_df)
+prediction = clustering_model.predict(pca_transformed_df)
+
+print(prediction[0])
+```
+
+## Model Details 🤖
+
+
+## Contributing 🤝
+1. Fork the repository.
+2. Create a new feature branch:
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. Open a pull request.
+
+## License 📋
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/LICENSE) file for more details.
+
+<h3>⭐ Don't forget to star the repository if you find it helpful!
+
+
 <pre>
 1)Importing libraries - I've Imported all the libraries including libraries for preprocessing, visualization, 
 statistical libraries, clustering models, cluster evaluation metrics, classification models, evaluation metrics, pipeline libraries.
