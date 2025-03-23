@@ -33,7 +33,6 @@ Credit-Card-Customer-Segmentation/
 │   ├── KMeans_model.pkl        # K-Means clustering model
 │   ├── PCA_model.pkl           # PCA model for dimensionality reduction
 ├── preprocessing_values/       # Preprocessing configurations and values
-├── video_demo/                 # Video demonstration of the project
 ├── webpage_images/             # Images of the web page and terminal logging
 ├── __pycache__/                # Cached Python files
 ├── .gitignore                  # Git ignore file
