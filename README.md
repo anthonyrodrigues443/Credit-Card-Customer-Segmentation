@@ -16,6 +16,38 @@ This project is a machine learning-based web application for segmenting credit c
 ### Webpage
 <img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web1.png" width="400px"><img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web2.png" width="400px"><img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web3.png" width="400px"><img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web4.png" width="400px"><img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web5.png" width="400px"><img src="https://github.com/anthonyrodrigues443/Credit-Card-Customer-Segmentation/blob/main/webpage_images/web6.png" width="400px">
 
+
+## Project Structure 🗂️
+```
+Credit-Card-Customer-Segmentation/
+├── customer_seg_proj/         # Python virtual environment
+├── datasets/                  # Dataset directory
+│   ├── cluster0_data.csv
+│   ├── cluster1_data.csv
+│   ├── cluster2_data.csv
+│   ├── cluster3_data.csv
+│   ├── cluster4_data.csv
+│   ├── clustered_data.csv
+│   ├── Customer Data.csv
+├── models/                    # Trained clustering models
+│   ├── KMeans_model.pkl        # K-Means clustering model
+│   ├── PCA_model.pkl           # PCA model for dimensionality reduction
+├── preprocessing_values/       # Preprocessing configurations and values
+├── video_demo/                 # Video demonstration of the project
+├── webpage_images/             # Images of the web page and terminal logging
+├── __pycache__/                # Cached Python files
+├── .gitignore                  # Git ignore file
+├── app.py                      # Flask application entry point
+├── cluster_info.txt            # Information about clustering results
+├── cust_seg_nb.ipynb           # Jupyter Notebook for model building
+├── model_preprocessor.pkl      # Preprocessing pipeline for clustering
+├── pipeline_model.pkl          # Full pipeline model (preprocessing + clustering)
+├── preprocessor.py             # Script for preprocessing data
+├── README.md                   # Project documentation
+├── requirements.txt            # Python dependencies
+
+```
+
 <pre>
 1)Importing libraries - I've Imported all the libraries including libraries for preprocessing, visualization, 
 statistical libraries, clustering models, cluster evaluation metrics, classification models, evaluation metrics, pipeline libraries.
