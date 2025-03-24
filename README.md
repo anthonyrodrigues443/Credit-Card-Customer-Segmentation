@@ -22,13 +22,13 @@ This project is a machine learning-based web application for segmenting credit c
 Credit-Card-Customer-Segmentation/
 ├── customer_seg_proj/         # Python virtual environment
 ├── datasets/                  # Dataset directory
-│   ├── cluster0_data.csv
+│   ├── cluster0_data.csv      # clusterwise data
 │   ├── cluster1_data.csv
 │   ├── cluster2_data.csv
 │   ├── cluster3_data.csv
 │   ├── cluster4_data.csv
-│   ├── clustered_data.csv
-│   ├── Customer Data.csv
+│   ├── clustered_data.csv    # full clustered data
+│   ├── Customer Data.csv     # raw data
 ├── models/                    # Trained clustering models
 │   ├── KMeans_model.pkl        # K-Means clustering model
 │   ├── PCA_model.pkl           # PCA model for dimensionality reduction
@@ -46,7 +46,16 @@ Credit-Card-Customer-Segmentation/
 ```
 
 ## Features ⭐
-
+- Preprocessing pipeline:
+  - Missing value treatment
+  - Log normalization
+  - Handling multicollinearity
+  - Dimensionality reduction
+- Machine learning model for clustering :
+  - KMeans clustering and silhoutte score for optimal number of clusters
+- Interactive web interface using streamlit for :
+  - Inputting applicant details
+  - Displaying customer cluster, charateristics and schemes for each cluster
 
 ## Installation 🧑‍🔧
 1. Clone the repository:
@@ -85,6 +94,7 @@ with open('models/PCA_model.pkl', 'rb')as pca_file:
 with open('models/KMeans_model.pkl', 'rb')as kmeans_model_:
     clustering_model = pickle.load(kmeans_model_)
 
+#input values instead for the respective field
 records = [ BALANCE,BALANCE_FREQUENCY,PURCHASES, ONEOFF_PURCHASES,INSTALLMENTS_PURCHASES,CASH_ADVANCE,
            ONEOFF_PURCHASES_FREQUENCY, PURCHASES_INSTALLMENTS_FREQUENCY,CASH_ADVANCE_TRX,	
            PURCHASES_TRX,	CREDIT_LIMIT,	PAYMENTS, MINIMUM_PAYMENTS,PRC_FULL_PAYMENT, TENURE]
