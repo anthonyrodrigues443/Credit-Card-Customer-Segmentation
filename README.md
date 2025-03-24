@@ -109,7 +109,11 @@ print(prediction[0])
 ```
 
 ## Model Details 🤖
-
+- Algorithms Used:
+  - PCA (dimensionality reduction) based on explained cumulative variance 
+  - Kmeans using elbow method (wcss) to estimte the optimal number of clusters
+- Evaluation Metrics:
+  - Silhoutte score
 
 ## Contributing 🤝
 1. Fork the repository.
